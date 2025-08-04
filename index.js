@@ -50,8 +50,8 @@ const dataSets = {
         'Dead Space 3', 
         'Metal Gear Rising: Revengance',
         'Crysis 3',
-        'Tomb Raider'
-
+        'Tomb Raider',
+        'Call of Juarez: Gunslinger'
     ],
     apomnite: [
         'God of War',
