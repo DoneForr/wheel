@@ -43,6 +43,27 @@ const dataSets = {
         'Решка',
         'Ребро!',
     ],
+    agusha:[
+        'Spyro remaster',
+        'Rayman Legends',
+        'Adventure Time: Pirates of the Enchiridion',
+        'Samurai Jack: Battle Through Time',
+        'DreamWorks Dragons: Dawn of New Riders',
+        'The Simpsons Hit & Run',
+        'Shrek 2',
+        'Супер Корова',
+        'Spongebob Squarepants Battle for Bikini Bottom',
+    ],
+    boomer:[
+        'StarCraft 2',
+        'Dawn of war',
+        'Stronghold',
+        'Age of Empires 3',
+        'Red alert 3',
+        'ParaWorld',
+        'The Lord of the Rings: The Battle for Middle Earth II',
+        'Морские титаны',
+    ],
     god:[
         'Bioshock Infinite',
         'Remember Me',
@@ -52,6 +73,36 @@ const dataSets = {
         'Crysis 3',
         'Tomb Raider',
         'Call of Juarez: Gunslinger'
+    ],
+    rodina:[
+        'Бумер: сорванные башни',
+        'Lada racing club',
+        'Месть боксера',
+        'Русы против ящеров',
+        'Волкодав: путь воина',
+        'Beholder',
+        'Black book',
+        'Gun Done',
+        'Peace Death',
+        'The Underground Man',
+        'The Mercury Man',
+        'Братья Пилоты: По следам полосатого слона',
+        'Алеша Попович и Тугарин Змей',
+        'Счастливый билетик'
+    ],
+    kino:[
+        'The Walking Dead: The Game',
+        'Game of Thrones',
+        'The Wolf Among Us',
+        'Jurassic Park: The Game', 
+        'Spider-Man 2',
+        'Indiana Jones and the Staff of Kings', 
+        'Avatar: The Game',
+        'The Thing',
+        'American McGee Alice',
+        'The Godfather',
+        'The Chronicles of Riddick: Escape from Butcher Bay',
+        'Back to the Future: The Game',
     ],
     apomnite: [
         'God of War',
@@ -92,18 +143,18 @@ const dataSets = {
         'Фанат DMC',
         'Меценат',
         'Нищая собака'
-    ],
-    racist:[
-        'DiRT: Showdown',
-        'Need for speed Carbon',
-        'Burnout Paradise',
-        'CTR (crash)',
-        'Carmageddon Max Damage',
-        'MX vs. ATV',
-        'NFS еHot Pursuit',
-        'Trials Rising',
-        'Lada Racing Club', 
-        'Asphalt 8'
+    ],   
+    oleg:[
+        'Lies of P',
+        'Salt and sanctuary',
+        'Blasphemous',
+        'Grime',
+        'Eldest souls',
+        'Ender Lylis',
+        'Blade of darkness',
+        'Ai Limit',
+        'Sifu',
+        'Another Crabs Treasure',
     ],
     drochevo:[
         'Кусок мяса',
@@ -127,6 +178,28 @@ const dataSets = {
         'Forgive me father',
         'Forgive me father 2', 
         'BRUTAL JOHN 2'
+    ],
+    racist:[
+        'DiRT: Showdown',
+        'Need for speed Carbon',
+        'Burnout Paradise',
+        'Carmageddon Max Damage',
+        'MX vs. ATV 2010',
+        'NFS Hot Pursuit(2010)',
+        'Trials Rising',
+        'Driver San Francisco',
+        'Street Racing Syndicate',
+        'Dakar 18'
+    ],
+    zondre:[
+        'The evil Within',
+        'Dying Light',
+        'Dead Island',
+        'Dead Rising',
+        'Stubbs the Zombie',
+        'UNDYING',
+        'Счастливый Билетик',
+        'DeadLight'
     ]
 };
 let currentDataSet = 'inventory',
@@ -294,14 +367,14 @@ class Presets {
 const presets = new Presets;
 
 function getImageURI(index) {
-    let result = '/4x.avif',
+    let result = '../4x.avif',
         offset = 0
     ;
     switch (currentDataSet) {
         case "inventory":
             offset = 50;
         case "effects":
-            result = '/4x.avif';
+            result = '../4x.avif';
             break;
 
         case "debuffs":
@@ -329,12 +402,12 @@ function getImageURI(index) {
             break;
 
         case "coin":
-            result = '/coin-obverse-20.png';
+            result = '../coin-obverse-20.png';
             if (index === 1) {
-                result = '/coin-reverse-20.png';
+                result = '../coin-reverse-20.png';
             }
             if (index === 10) {
-                result = '/coin-gurt.png';
+                result = '../coin-gurt.png';
             }
             break;
 
