@@ -367,14 +367,14 @@ class Presets {
 const presets = new Presets;
 
 function getImageURI(index) {
-    let result = '../4x.avif',
+    let result = './4x.avif',
         offset = 0
     ;
     switch (currentDataSet) {
         case "inventory":
             offset = 50;
         case "effects":
-            result = '../4x.avif';
+            result = './4x.avif';
             break;
 
         case "debuffs":
@@ -402,12 +402,12 @@ function getImageURI(index) {
             break;
 
         case "coin":
-            result = '../coin-obverse-20.png';
+            result = './coin-obverse-20.png';
             if (index === 1) {
-                result = '../coin-reverse-20.png';
+                result = './coin-reverse-20.png';
             }
             if (index === 10) {
-                result = '../coin-gurt.png';
+                result = './coin-gurt.png';
             }
             break;
 
