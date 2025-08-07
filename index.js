@@ -49,6 +49,7 @@ const dataSets = {
         'Shrek 2',
         'Супер Корова',
         'Spongebob Squarepants Battle for Bikini Bottom',
+        'Asterix & Obelix XXL'
     ],
     boomer:[
         'StarCraft 2',
@@ -168,13 +169,13 @@ const dataSets = {
     shooter:[
         'TimeShift',
         'Bulletstorm',
-        'Trepang2',
         'Singularity',
         'PainKiller',
         'Spec Ops: The line',
         'Forgive me father',
         'Forgive me father 2', 
-        'BRUTAL JOHN 2'
+        'BRUTAL JOHN 2',
+        'F.E.A.R.'
     ],
     racist:[
         'DiRT: Showdown',
